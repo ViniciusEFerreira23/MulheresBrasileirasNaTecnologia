@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Letra formal ;
+    src: url(./staylista/Stalysta_personal\ use.ttf);
+}
+
+body {
+    font-family: 'Oswald', sans-serif; /* Fonte mais moderna */
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto padrão */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background: linear-gradient(135deg, #a403e4, #4a0a8b); /* Gradiente vibrante */
+    color: white;
+    padding: 30px 0; /* Espaçamento ampliado */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header h1 {
+    font-size: 2.5em; /* Aumentar o tamanho do título */
+    margin-bottom: 10px;
+    font-family: Letra formal;
+    background-image: url(https://cdn.pixabay.com/photo/2021/10/16/17/33/roses-6715587_1280.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 100px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Aumentar o espaçamento entre itens */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500; /* Negrito leve */
+    transition: color 0.3s, transform 0.3s; /* Adicionar transição */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento */
+}
+
+/* Estilização do conteúdo principal */
+main {
+    padding: 30px; /* Aumentar espaçamento */
+    max-width: 800px;
+    margin: 40px auto; /* Margem superior maior */
+    background: white;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+}
+
+/* Introdução */
+.intro {
+    margin-bottom: 30px;
+    font-size: 1.2em; /* Aumentar tamanho do texto */
+    line-height: 1.8; /* Aumentar espaçamento entre linhas */
+    padding: 15px;
+    border-left: 5px solid #a403e4; /* Destaque com borda à esquerda */
+    background: #e8eaf6; /* Fundo leve */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Seção de biografias */
+section {
+    margin-bottom: 50px; /* Aumentar espaçamento inferior */
+}
+
+h2 {
+    font-size: 2em; /* Tamanho do título da seção */
+    color: #6a5acd; /* Cor do título */
+    border-bottom: 2px solid #6a5acd; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+    margin-bottom: 20px;
+    font-family: Letra formal;
+}
+
+h3 {
+    font-size: 1em;
+    font-family: Letra formal;
+}
+
+th {
+    font-family: Letra formal;
+}
+
+/* Estilização dos artigos */
+article {
+    margin-bottom: 30px; /* Aumentar espaçamento entre artigos */
+    padding: 20px; /* Aumentar espaçamento interno */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    transition: transform 0.3s; /* Animação suave */
+}
+
+article:hover {
+    transform: translateY(-3px); /* Elevação ao passar o mouse */
+}
+
+article h3 {
+    font-size: 1.5em; /* Tamanho do título do artigo */
+    margin-bottom: 10px;
+}
+
+/* Tabela de comparação */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px; /* Aumentar espaçamento */
+    text-align: left;
+    border: 1px solid #ddd; /* Bordas mais definidas */
+}
+
+table th {
+    background: #6a5acd; /* Cor de fundo do cabeçalho da tabela */
+    color: white; /* Cor do texto */
+}
+
+/* Galeria */
+figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%; /* Ajustar largura */
+    max-width: 500px; /* Limitar a largura máxima */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transition: transform 0.3s; /* Animação de transformação */
+}
+
+figure img:hover {
+    transform: scale(1.05); /* Aumento ao passar o mouse */
+}
+
+/* Formulário de contato */
+form {
+    background: #fff;
+    padding: 30px; /* Aumentar espaçamento */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s; /* Transição de sombra */
+}
+
+form:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Negrito mais forte */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px; /* Aumentar espaçamento interno */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Transição ao focar */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #a403e4; /* Cor ao focar */
+    outline: none; /* Remove contorno padrão */
+}
+
+form button {
+    background: #6a5acd;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Aumentar espaçamento interno */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s; /* Transições suaves */
+    border-radius: 4px;
+}
+
+form button:hover {
+    background: #ffcc00; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação */
+    transform: scale(1.2);
+}
+
+/* Estilização do rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #6a5acd;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Lista em coluna em telas menores */
+        margin: 10px 0; /* Espaçamento vertical */
+    }
+
+    main {
+        padding: 20px; /* Reduzir espaçamento em telas menores */
+    }
+
+    h1 {
+        font-size: 2em;
+        font-family: "Oswald", sans-serif;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduzir tamanho do título da seção */
+    }
+
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em; /* Ajustar título em telas pequenas */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Ajustar tamanho do título da seção */
+    }
+
+    form input, form textarea {
+        padding: 10px; /* Ajustar padding em inputs */
+    }
+}
